@@ -1,15 +1,20 @@
 #include "sosho_L.dtsi"
-#include <input_transform.h>
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
-&spi0 { status = "okay"; };
+&spi0 {
+    status = "okay";
+};
+
 &glidepoint {
     status = "okay";
-    /*invert-x;*/
+    /* invert-x; */
 };
+
 &glidepoint_split {
     status = "okay";
     device = <&glidepoint>;
-    input-processors =
-        <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>;
-};
 
+    input-processors =
+        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>;
+};
