@@ -1,4 +1,5 @@
 #include "sosho_L.dtsi"
+#include <input_transform.h>
 
 &spi0 { status = "okay"; };
 &glidepoint {
