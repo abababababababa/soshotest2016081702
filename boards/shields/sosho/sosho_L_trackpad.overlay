@@ -3,7 +3,7 @@
 &spi0 { status = "okay"; };
 &glidepoint {
     status = "okay";
-    invert-x;
+    /*invert-x;*/
 };
 &glidepoint_split {
     status = "okay";
