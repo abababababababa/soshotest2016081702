@@ -170,7 +170,7 @@
         status = "disabled";
         compatible = "cirque,pinnacle";
         reg = <0>;
-        spi-max-frequency = <1000000>;
+        spi-max-frequency = <500000>;
         data-ready-gpios = <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         /* Setting a higher sensitivity causes issues on bluetooth */
         sensitivity = "2x";
